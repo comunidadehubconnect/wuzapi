@@ -223,7 +223,7 @@ http://wuzapi.seudominio.com.br/api
 ```bash
 sudo apt update && apt upgrade -y
 ```
-</details>
+
 
 
 #### Acesse super Admin
