@@ -205,6 +205,9 @@ http://wuzapi.seudominio.com.br/login/?token=tokenaleatorio
 http://wuzapi.seudominio.com.br/chatwoot
 ```
 
+</details>
+
+
 ### Informações Adicionais
 
 Url da api 
