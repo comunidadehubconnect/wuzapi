@@ -181,6 +181,14 @@ chatwoot:
     forceUpdateCwWebhook: false
 ```
 
+### Criando sua Caixa de Entrada
+
+### Url Webhook da API para colocar no Inbox do Chatwoot
+
+```bash
+http://wuzapi.seudominio.com.br/chatwoot
+```
+
 ### Start API
 
 ```bash
@@ -199,15 +207,6 @@ sqlite3 dbdata/users.db "insert into users ('name','token') values ('instancia',
 http://wuzapi.seudominio.com.br/login/?token=tokenaleatorio
 ```
 
-### Url Webhook da API para colocar no Inbox do Chatwoot
-
-```bash
-http://wuzapi.seudominio.com.br/chatwoot
-```
-
-</details>
-
-
 ### Informações Adicionais
 
 Url da api 
@@ -224,11 +223,33 @@ http://wuzapi.seudominio.com.br/api
 sudo apt update && apt upgrade -y
 ```
 
-
+</details>
 
 #### Acesse super Admin
 
 https://app.seudominio.com.br/super_admin
 
 Navegue até a opção > installation_configs
+
+Navegue até a opção > installation_configs
+
+```bash
+LOGO
+LOGO_THUMBNAIL
+NOMES CHATWOOT:
+```
+
+### Alterando nomes na Plataforma
+
+```bash
+INSTALLATION_NAME
+BRAND_NAME
+TERMOS E POLITICA DE PRIVACIDADE
+TERMS_URL
+PRIVACY_URL
+BRAND_URL
+WIDGET_BRAND_URL
+```
+
+
 
