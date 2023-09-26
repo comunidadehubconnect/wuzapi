@@ -32,56 +32,6 @@ sudo apt install sqlite3
 git clone https://github.com/hasanbasri1993/wuzapi
 ```
 
-```bash
-cd wuzapi
-nano config.yaml
-```
-
-```bash
-appName: CWMKT
-server: 
-  host: IPVPS
-  port: 9000
-chatwoot:
-    baseUrl: https://urlchatwoot/app/accounts/numeroaccounts/inbox/numeroinbox
-    accountToken: TokenChatwoot
-    forceUpdateCwWebhook: false
-```
-
-### Start API
-
-```bash
-go run .
-```
-
-### Comando Token
-
-```bash
-sqlite3 dbdata/users.db "insert into users ('name','token') values ('instancia','tokenaleatorio')"
-```
-
-### Chamar Qrcode
-
-```bash
-http://IPVPS:9000/login/?token=123456
-```
-
-### Url Webhook do Chatwoot
-
-```bash
-http://IPVPS:9000/chatwoot
-```
-
-### Informações Adicionais
-
-Url da api 
-
-http://IPVPS:9000
-
-Url do swagger
-
-http://IPVPS:9000/api
-
 ### Proxy Reverso
 
 ```bash
@@ -136,5 +86,58 @@ sudo certbot --nginx
 ```bash
 sudo service nginx restart
 ```
+
+### Configurando Conector com o Chatwoot
+
+```bash
+cd wuzapi
+nano config.yaml
+```
+
+```bash
+appName: NomeEmpresa
+server: 
+  host: wuzapi.seudominio.com.br
+  port: 9000
+chatwoot:
+    baseUrl: https://urlchatwoot/app/accounts/numeroaccounts/inbox/numeroinbox
+    accountToken: TokenChatwootProfile
+    forceUpdateCwWebhook: false
+```
+
+### Start API
+
+```bash
+go run .
+```
+
+### Crie um Usuário e token para iniciar Sessões
+
+```bash
+sqlite3 dbdata/users.db "insert into users ('name','token') values ('instancia','tokenaleatorio')"
+```
+
+### Gerar Qrcode
+
+```bash
+http://wuzapi.seudominio.com.br/login/?token=tokenaleatorio
+```
+
+### Url Webhook da API para colocar no Inbox do Chatwoot
+
+```bash
+http://wuzapi.seudominio.com.br/chatwoot
+```
+
+### Informações Adicionais
+
+Url da api 
+
+http://wuzapi.seudominio.com.br
+
+Url do swagger
+
+http://wuzapi.seudominio.com.br/api
+
 
 
