@@ -110,13 +110,6 @@ git clone https://github.com/hasanbasri1993/wuzapi
 
 ### Proxy Reverso
 
-```bash
-sudo apt install nginx -y
-```
-
-```bash
-sudo rm /etc/nginx/sites-enabled/default
-```
 
 ```bash
 sudo nano /etc/nginx/sites-available/wuzapi
@@ -141,18 +134,6 @@ server {
 
 ```bash
 sudo ln -s /etc/nginx/sites-available/wuzapi /etc/nginx/sites-enabled
-```
-
-```bash
-sudo apt-get install snapd -y
-```
-
-```bash
-sudo snap install notes
-```
-
-```bash
-sudo snap install --classic certbot
 ```
 
 ```bash
