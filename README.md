@@ -12,7 +12,7 @@
 <hr />
 <hr />
 
-### Instale as dependências
+### Instale as Dependências
 
 ```bash
 sudo apt install git -y
@@ -26,7 +26,7 @@ sudo apt install golang-go
 sudo apt install sqlite3
 ```
 
-### Clone repositório oficial da WUZAPI
+### Clone Repositório Oficial da WUZAPI
 
 ```bash
 git clone https://github.com/hasanbasri1993/wuzapi
@@ -54,25 +54,25 @@ chatwoot:
 go run .
 ```
 
-### Comando token
+### Comando Token
 
 ```bash
 sqlite3 dbdata/users.db "insert into users ('name','token') values ('instancia','tokenaleatorio')"
 ```
 
-### Chamar qrcode
+### Chamar Qrcode
 
 ```bash
 http://IPVPS:9000/login/?token=123456
 ```
 
-### Url webhook do chatwoot
+### Url Webhook do Chatwoot
 
 ```bash
 http://IPVPS:9000/chatwoot
 ```
 
-### Informações adicionais
+### Informações Adicionais
 
 Url da api 
 
