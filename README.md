@@ -167,7 +167,7 @@ chatwoot:
 ### Url Webhook da API para colocar no Inbox do Chatwoot
 
 ```bash
-http://wuzapi.seudominio.com.br/chatwoot
+https://wuzapi.seudominio.com.br/chatwoot
 ```
 
 ### Start API
@@ -192,11 +192,11 @@ http://wuzapi.seudominio.com.br/login/?token=tokenaleatorio
 
 Url da api 
 
-http://wuzapi.seudominio.com.br
+https://wuzapi.seudominio.com.br
 
 Url do swagger
 
-http://wuzapi.seudominio.com.br/api
+https://wuzapi.seudominio.com.br/api
 
 ### Atualize sua máquina com os últimos pacotes
 
